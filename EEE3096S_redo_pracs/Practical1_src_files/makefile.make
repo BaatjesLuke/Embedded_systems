@@ -7,8 +7,8 @@ OBJS = obj/*
 
 default:
     mkdir -p bin obj
-    $(CC) $(CFLAGS) -c src/BinClock.c -o obj/BinClock
-    $(CC) $(CFLAGS) -c src/CurrentTime.c -o obj/CurrentTime
+    $(CC) $(CFLAGS) -c Practical1_src_files/BinClock.c -o obj/BinClock
+    $(CC) $(CFLAGS) -c Practical1_src_files/CurrentTime.c -o obj/CurrentTime
     $(CC) $(CFLAGS) obj/BinClock obj/CurrentTime -o bin/Clock
 
 run:
